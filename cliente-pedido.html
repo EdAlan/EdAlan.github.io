@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="estilos.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pasteleria Delicias</title>
+    </head>
+    <body>
+        <img src="./Logo-Pasteleria.gif" alt="Logotipo de pasteleria delicias" title="Logotipo de pasteleria delicias" width="300px">
+        <h1>Es momento de probar nuestros deliciosos pasteles</h1>
+        <h2>Solo complete nuestro formulario para realizar su pedido</h2>
+        <form action="./Accion.js" id="formulario" method="post">
+            <label for="nombre"> Coloque su nombre completo</label>
+            <br>
+            <input type="text" id="nombre" name="nombre">
+            <br><br>
+
+            <label for="telefono">Coloque su numero telefonico (10 Digitos)</label>
+            <br>
+            <input type="tel" id="telefono" name="telefono" maxlength="10">
+            <br><br>
+
+            <label for="correo">Coloque su correo electronico</label>
+            <br>
+            <input type="email" id="correo" name="correo">
+            <br><br>
+
+            <label for="descripcion">Coloque la descripcion general de su pastel</label>
+            <br>
+            <input type="text" id="descripcion" name="descripcion">
+            <br>
+
+            <p>Coloque la seleccion de sabores que usted prefiera</p>
+            <input type="checkbox" id="sabor1" name="sabor1" value="Vainilla">
+            <label for="sabor1">Vainilla</label><br>
+            <input type="checkbox" id="sabor2" name="sabor2" value="Fresa">
+            <label for="sabor2">Fresa</label><br>
+            <input type="checkbox" id="sabor3" name="sabor3" value="Chocolate">
+            <label for="sabor3">Chocolate</label><br>
+            <input type="checkbox" id="sabor4" name="sabor4" value="Limon">
+            <label for="sabor4">Limon</label><br>
+            <input type="checkbox" id="sabor5" name="sabor5" value="Red Velvet">
+            <label for="sabor5">Red Velvet</label>
+            <br>
+
+            <p>Coloque la seleccion de adornos que usted prefiera</p>
+            <input type="checkbox" id="adorno1" name="adorno1" value="Fruta">
+            <label for="adorno1">Fruta</label><br>
+            <input type="checkbox" id="adorno2" name="adorno2" value="Chochitos">
+            <label for="adorno2">Chochitos</label><br>
+            <input type="checkbox" id="adorno3" name="adorno3" value="Chispas de chocolate">
+            <label for="adorno3">Chispas de chocolate</label><br>
+            <input type="checkbox" id="adorno4" name="adorno4" value="Betun">
+            <label for="adorno4">Betun</label><br>
+            <input type="checkbox" id="adorno5" name="adorno5" value="Perlitas de colores">
+            <label for="adorno5">Perlitas de colores</label>
+            <br><br>
+
+            <input class="boton" type="submit" value="Enviar datos de tu pedido"><br><br>
+            <input class="boton" type="reset" value="Reiniciar campos"><br><br>
+            <a href="./index.html"><input class="boton" type="button" id="index" name="index" value="Regresar a la pagina principal"></a>
+            <br><br>
+            <footer>
+                <p>Direccion: Calle "Los pinos", Numero #398, Colonia Nezahualcoyotl, Estado de Mexico, Mexico</p>
+                <p>Telefono: 55-40506080</p>
+                <p>Horarios de atencion: Lunes a Viernes desde las 09:00 hrs hasta las 20:00 hrs</p>
+            </footer>
+        </form>
+    </body>
+</html>
